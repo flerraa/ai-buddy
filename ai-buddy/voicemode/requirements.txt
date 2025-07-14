@@ -1,0 +1,56 @@
+# Voice Mode Requirements for AI Buddy FYP
+# File: voicemode/requirements.txt
+
+# Core FastAPI for voice service
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# Audio processing core
+pydub>=0.25.1
+av>=10.0.0
+numpy>=1.24.0
+
+# Speech-to-Text (Primary: faster-whisper)
+faster-whisper>=0.9.0
+openai-whisper>=20231117
+
+# Speech-to-Text (Fallback: SpeechRecognition)
+SpeechRecognition>=3.10.0
+pyaudio>=0.2.11
+
+# Text-to-Speech (Primary: Coqui TTS)
+TTS>=0.20.0
+
+# Text-to-Speech (Fallback: pyttsx3)
+pyttsx3>=2.90
+
+# Audio utilities and processing
+librosa>=0.10.0
+soundfile>=0.12.1
+webrtcvad>=2.0.10
+
+# PyTorch for ML models (ensure compatibility)
+torch>=2.0.0
+torchaudio>=2.0.0
+
+# HTTP client for communication with main app
+requests>=2.31.0
+websockets>=12.0
+
+
+
+# Additional audio codecs and processing
+ffmpeg-python>=0.2.0
+
+# Async support
+asyncio-mqtt>=0.11.0
+
+# Development and testing
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+
+# Optional: GPU acceleration (uncomment if using CUDA)
+# torch-audio>=2.0.0+cu118
+# torchaudio>=2.0.0+cu118
+
